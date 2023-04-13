@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Scrabble</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="data.js"></script>
+  <script src="reviews.js"></script>
+
+</head>
+
+<body style="background-color: #f3e7c4;">
+
+  <div class="header">
+    <img src="https://scrabblego.com/images/hasbro/01-scrabble-mobile.png">
+
+    <nav>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="review.html">Review</a> </li>
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+    </nav>
+
+    <div id="reviews">
+    </div>
+    <h1 style="text-align: center; padding-top:30px;">Post your Review Here</h1>
+    <div id="review-form">
+      <form onsubmit="addReview(); return false;">
+        <label>Name: <input type="text" id="name" placeholder="Enter your Name" /></label><br />
+        <label>Date: <input type="date" id="date" /></label><br />
+        <label>Review: <input type="text" id="review" placeholder="Write Your Reviews here" /></label><br />
+        <input type="submit" value="Post" />
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

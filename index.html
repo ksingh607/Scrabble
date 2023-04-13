@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrabble</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validateForm() {
+      var emailInput = document.getElementById('email-input');
+      var emailValue = emailInput.value;
+      if (emailValue === '') {
+        alert('Please enter a valid email address');
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <img src="https://scrabblego.com/images/hasbro/01-scrabble-mobile.png">
+
+    <nav>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="review.html">Review</a> </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <div class="text-box">
+      <h1>Scrabble</h1>
+      <p>
+        Scrabble is a classic word game that challenges players to create words on a game board using letter tiles.
+        Players earn points based on the length and complexity of the words they create. Scrabble is a game of strategy,
+        vocabulary, and skill, and is enjoyed by players of all ages.<br>
+
+      <div class="user-box">
+        <img
+          src="https://i.guim.co.uk/img/media/ea612d6f2e70ae77583f5d3b7eada12611618aef/0_180_5146_3088/master/5146.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1b7b3e6433804c04280619131075cc4f">
+      </div>
+      </p>
+    </div>
+
+  </div>
+  </div>
+  <div class="content">
+    <h1 style="text-align:center;">How to play </h1>
+    <p style="text-align: center; "> Scrabble is played by placing letter tiles on a game board to create interconnected
+      words.
+      Each player starts with a set of letter tiles and takes turns placing tiles on the board to create words.
+      Players can earn extra points by using tiles with higher point values and placing tiles on special squares
+      that offer bonus points. The game continues until all letter tiles have been used or no more valid words can
+      be created. The player with the highest score at the end of the game wins!
+
+      For detailed rules follow the youtube video</p>
+    <div style="display: flex; justify-content:center; margin-top: 30px; padding-left: 10px;">
+      <iframe width="580" height="350" src="https://www.youtube.com/embed/K1KgvZwwJqo" title="How to Play Scrabble"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+  <footer>
+    <h2 style="margin-top: 30px;">Join Our Newsletter</h2>
+    <br>
+    <form action="https://httpbin.org/post" method="post" onsubmit="return validateForm()">
+      <label for="email-input">Email Address:</label>
+      <input type="email" id="email-input" name="email" placeholder="Enter your Email">
+      <input type="hidden" name="name" value="Your Name">
+      <input type="submit" value="Join">
+    </form>
+  </footer>
+</body>
+
+</html>
